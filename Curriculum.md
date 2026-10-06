@@ -25,7 +25,7 @@ IaC (Terraform) e Go (Golang) para arquitetura de microsserviços e sistemas dis
 ## 🏗️ Projetos de Engenharia & Arquitetura
 
 ### Estudo de Caso: Arquitetura de Monolito Modular e Ingestão de Telemetria
-*GitHub: [github.com/seu-usuario/architecture-case-study]*
+*GitHub: [Repositorio em estruturação com estudo de caso real seguindo a LGPD]*
 * Blueprint de arquitetura focado em ingestão, tratamento e processamento de dados industriais em tempo real.
 * Concepção de APIs REST assíncronas com **FastAPI** e **Pydantic v2** para validação estrita de dados na camada de borda.
 * Modelagem de camada de persistência com **SQLAlchemy 2.0 (Async)** e integração com ERP (TOTVS) como fonte da verdade.
@@ -33,7 +33,7 @@ IaC (Terraform) e Go (Golang) para arquitetura de microsserviços e sistemas dis
 * Padronização de governança de código, versionamento com Git/GitHub e conteinerização completa da aplicação via **Docker Compose**.
 
 ### Homelab & Infraestrutura Cloud-Native
-*GitHub: [github.com/seu-usuario/homelab-infrastructure]*
+*GitHub: [github.com/FelipeNegraoSouza/HomelabServer-AcerE5]*
 * Provisionamento de infraestrutura local (*bare-metal*) utilizando **Terraform** e ambiente Linux.
 * Configuração e orquestração de cluster **K3s (Kubernetes)** para deploy de serviços conteinerizados.
 * Implementação prática de topologia de redes, gestão de memória e resiliência em ambiente de hardware restrito.
