@@ -1,7 +1,7 @@
 # Felipe Negrão Souza
 
 **Desenvolvedor Backend & DevOps**  
-Aparecida do Taboado - MS | [felipe.ngsouza@gmail.com](mailto:felipe.ngsouza@gmail.com) | (67) 98111-351  
+Aparecida do Taboado - MS | [felipe.ngsouza@gmail.com](mailto:felipe.ngsouza@gmail.com) | (67) 98111-3514 
 [LinkedIn](https://www.linkedin.com/in/felipenegraosouza) | [GitHub](https://github.com/FelipeNegraoSouza)
 
 ---
