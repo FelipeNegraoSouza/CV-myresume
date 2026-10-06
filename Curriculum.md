@@ -34,12 +34,13 @@ IaC (Terraform) e Go (Golang) para arquitetura de microsserviços e sistemas dis
 
 ### Homelab & Infraestrutura Cloud-Native
 *GitHub: [github.com/FelipeNegraoSouza/HomelabServer-AcerE5]*
-* ## 📌 Visão Geral & Filosofia
+ ## 📌 Visão Geral & Filosofia
 * **Objetivo:** Construir um servidor residencial autônomo, seguro e de baixo consumo para hospedar serviços, automações, projetos pessoais, e armazenamento.
 * **Filosofia:** Priorizar **manual mastery, system autonomy e privacidade** (zero telemetria desnecessária, sem camadas de virtualização pesadas).
 * **Hardware Servidor:** Acer E5 (Intel Core i5 de 5ª geração, 4GB de RAM, HDD 1TB).
 * **Stack Tecnológica Base:** Debian Server (Headless), Docker, Tailscale, Go, Git, Terraform, K3s(Kubernets), jellyfin e filebrowser.
-* ##Execução
+  
+ ### *Execução*
 - **Instalação e Configuração Minimalista:** Instalação limpa do **Debian Server** (*netinst*) via CLI em hardware dedicado (Core i5 5ª gen, 4GB RAM) com reserva de IP fixo na rede local.
 - **Ajustes de Kernel & Hardening:** Parametrização do `systemd-logind` para operação contínua *headless* com tampa fechada, regras de firewall com **UFW** e hardening de acesso **SSH**.
 - **Rede Privada Mesh:** Configuração e autenticação do **Tailscale** para gerenciamento de acesso remoto criptografado via VPN mesh sem exposição de portas públicas.
