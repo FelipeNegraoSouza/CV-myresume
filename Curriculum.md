@@ -34,9 +34,18 @@ IaC (Terraform) e Go (Golang) para arquitetura de microsserviços e sistemas dis
 
 ### Homelab & Infraestrutura Cloud-Native
 *GitHub: [github.com/FelipeNegraoSouza/HomelabServer-AcerE5]*
-* Provisionamento de infraestrutura local (*bare-metal*) utilizando **Terraform** e ambiente Linux.
-* Configuração e orquestração de cluster **K3s (Kubernetes)** para deploy de serviços conteinerizados.
-* Implementação prática de topologia de redes, gestão de memória e resiliência em ambiente de hardware restrito.
+* ## 📌 Visão Geral & Filosofia
+* **Objetivo:** Construir um servidor residencial autônomo, seguro e de baixo consumo para hospedar serviços, automações, projetos pessoais, e armazenamento.
+* **Filosofia:** Priorizar **manual mastery, system autonomy e privacidade** (zero telemetria desnecessária, sem camadas de virtualização pesadas).
+* **Hardware Servidor:** Acer E5 (Intel Core i5 de 5ª geração, 4GB de RAM, HDD 1TB).
+* **Stack Tecnológica Base:** Debian Server (Headless), Docker, Tailscale, Go, Git, Terraform, K3s(Kubernets), jellyfin e filebrowser.
+   #Execução
+- **Instalação e Configuração Minimalista:** Instalação limpa do **Debian Server** (*netinst*) via CLI em hardware dedicado (Core i5 5ª gen, 4GB RAM) com reserva de IP fixo na rede local.
+- **Ajustes de Kernel & Hardening:** Parametrização do `systemd-logind` para operação contínua *headless* com tampa fechada, regras de firewall com **UFW** e hardening de acesso **SSH**.
+- **Rede Privada Mesh:** Configuração e autenticação do **Tailscale** para gerenciamento de acesso remoto criptografado via VPN mesh sem exposição de portas públicas.
+- **Runtime Docker & Persistência:** Instalação da engine do **Docker** e **Docker Compose**, estruturando o padrão de volumes e ambientes isolados em `/opt/services`.
+- **Implantação de Serviços & Mídia:** Deployment e orquestração de ecossistema de mídias e gestão de arquivos utilizando **Jellyfin** e **File Browser**, incluindo configuração de montagem de volumes e permissões de escrita/leitura no sistema de arquivos local.
+- **Manutenção Contínua & Lifecycle:** Gestão do ciclo de vida dos serviços, automação de backups de configurações, monitoramento de saúde do sistema e atualizações contínuas de containers e do SO.
 
 ---
 
